@@ -12,7 +12,7 @@ import java.util.List;
 @Transactional(readOnly = true)
 public class UserServiceImpl {
 
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
 
     @Autowired
     public UserServiceImpl(UserRepository userRepository) {

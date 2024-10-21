@@ -12,7 +12,7 @@ import web.service.UserServiceImpl;
 @Controller
 public class UserController {
 
-    private UserServiceImpl userService;
+    private final UserServiceImpl userService;
 
     @Autowired
     public UserController(UserServiceImpl userService) {
