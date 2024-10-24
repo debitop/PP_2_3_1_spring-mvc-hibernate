@@ -10,7 +10,7 @@ import java.util.List;
 
 @Service
 @Transactional(readOnly = true)
-public class UserServiceImpl {
+public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
 
